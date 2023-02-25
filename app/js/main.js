@@ -1,4 +1,11 @@
 jQuery(document).ready(function ($) {
+  $('.shop__more').on('click', function () {
+    $('.shop__description').toggleClass('shop__description--show');
+    $('.shop__more').toggleClass('shop__more--show');
+  });
+
+  ///==================================================
+
   ///----top-menu
   var $window = $(window),
     $target = $('.header__container'),
