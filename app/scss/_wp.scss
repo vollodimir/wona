@@ -1,0 +1,31 @@
+//Pagination
+
+.navigation {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-numbers {
+  display: block;
+  padding: 0 5px;
+  margin: 0 3px;
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid #12958b;
+  border-radius: 3px;
+  line-height: 30px;
+  color: #425466;
+  overflow: hidden;
+}
+
+.page-numbers:hover,
+.current {
+  color: #fff;
+  background: #12958b;
+}

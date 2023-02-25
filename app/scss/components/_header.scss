@@ -1,0 +1,111 @@
+$color: white;
+$width: 35px;
+$line-height: calc($width / 7);
+
+.header {
+  &__body {
+  }
+
+  &__navigation {
+  }
+
+  //mobile menu btn
+
+  &__input:checked ~ nav &__menu {
+    right: 0;
+  }
+
+  &__input {
+    width: $width;
+    height: $width;
+    position: absolute;
+    right: 25px;
+    z-index: 10;
+    opacity: 0;
+
+    &:checked ~ .header__lines {
+      width: 0px;
+    }
+    &:checked ~ .header__lines:before {
+      transform: rotate(45deg) translate(0px);
+    }
+    &:checked ~ .header__lines:after {
+      transform: rotate(-45deg) translate(0px);
+    }
+  }
+
+  &__lines {
+    position: absolute;
+    right: 25px;
+    width: $width;
+    height: calc($line-height/2);
+    border-radius: calc($line-height/3);
+    background: $color;
+    cursor: pointer;
+    transition: 0.6s;
+
+    &:before {
+      content: '';
+      width: $width;
+      height: calc($line-height/2);
+      background: $color;
+      position: absolute;
+      right: 0px;
+      transform: translateY(-$line-height * 2);
+      border-radius: calc($line-height/3);
+      transition: 0.6s;
+    }
+    &:after {
+      content: '';
+      width: $width;
+      height: calc($line-height/2);
+      background: $color;
+      position: absolute;
+      right: 0px;
+      transform: translateY($line-height * 2);
+      border-radius: calc($line-height/3);
+      transition: 0.6s;
+    }
+  }
+
+  //mobile menu btn END
+
+  &__menu {
+    display: none;
+    position: absolute;
+    padding-bottom: 15px;
+    background: #e4e4e6;
+    width: 100%;
+    height: calc(100vh - 60px);
+    top: 60px;
+    right: -2000px;
+    overflow-y: auto;
+    text-align: center;
+    transition: 0.8s;
+
+    a {
+      color: #000;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    li {
+      padding: 15px 0;
+    }
+  }
+}
+
+.sub-menu {
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #0a2540;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.menu-item-has-children {
+  position: relative;
+  &::after {
+    content: '>>';
+  }
+}
