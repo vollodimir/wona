@@ -6,75 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__body">
-          <div class="header__slider">
-            <div class="header__slide">
-              <div class="header__slide-img">
+          <div class="slider">
+            <div class="slider__list">
+              <div class="slider__img">
+                <img src="./img/sliders/slider_2.png" alt="slide 1" />
+              </div>
+              <div class="slider__img">
+                <img src="./img/sliders/slider_3.png" alt="slide 1" />
+              </div>
+              <div class="slider__img">
                 <img src="./img/sliders/slider_1.png" alt="slide 1" />
               </div>
             </div>
-            <ul class="slick-dots" style="display: block" role="tablist">
-              <li
-                class="slick-active"
-                aria-hidden="false"
-                role="presentation"
-                aria-selected="true"
-                aria-controls="navigation00"
-                id="slick-slide00"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">1</button>
+            <!-- <ul class="slider__dots">
+              <li class="slider__dots--active slick-active">
+                <button>1</button>
               </li>
-              <li
-                aria-hidden="true"
-                role="presentation"
-                aria-selected="false"
-                aria-controls="navigation01"
-                id="slick-slide01"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">2</button>
+              <li>
+                <button>2</button>
               </li>
-              <li
-                aria-hidden="true"
-                role="presentation"
-                aria-selected="false"
-                aria-controls="navigation02"
-                id="slick-slide02"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">3</button>
+              <li>
+                <button>3</button>
               </li>
-              <li
-                aria-hidden="true"
-                role="presentation"
-                aria-selected="false"
-                aria-controls="navigation03"
-                id="slick-slide03"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">4</button>
+              <li>
+                <button>4</button>
               </li>
-              <li
-                aria-hidden="true"
-                role="presentation"
-                aria-selected="false"
-                aria-controls="navigation04"
-                id="slick-slide04"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">5</button>
-              </li>
-              <li
-                aria-hidden="true"
-                role="presentation"
-                aria-selected="false"
-                aria-controls="navigation05"
-                id="slick-slide05"
-              >
-                <button type="button" data-role="none" role="button" tabindex="0">6</button>
-              </li>
-            </ul>
+            </ul> -->
           </div>
           <nav class="header__navigation">
             <input class="header__input" type="checkbox" />
@@ -260,6 +225,7 @@
     </div>
 
     <script src="./js/jquery-3.6.2.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>
