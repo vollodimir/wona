@@ -17,15 +17,15 @@
   margin: 0 3px;
   min-width: 30px;
   height: 30px;
-  border: 1px solid #12958b;
+  border: 1px solid #e45a80;
   border-radius: 3px;
   line-height: 30px;
-  color: #425466;
+  color: #000;
   overflow: hidden;
 }
 
 .page-numbers:hover,
 .current {
   color: #fff;
-  background: #12958b;
+  background: #e45a80;
 }

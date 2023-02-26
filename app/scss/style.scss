@@ -1,7 +1,5 @@
 ﻿@import 'normalize';
 @import 'components/all';
-@import 'shared';
-@import 'wp';
 @import 'media-queries';
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500;600&display=swap');
@@ -44,6 +42,9 @@ input:focus {
   outline: none;
 }
 
-main {
-  min-height: 150vh;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  background: #fff;
 }

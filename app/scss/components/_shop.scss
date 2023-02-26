@@ -1,4 +1,5 @@
 .shop {
+  padding-bottom: 40px;
   &__header {
     max-width: 792px;
     margin-bottom: 48px;
@@ -57,6 +58,7 @@
   }
 
   &__products {
+    padding-bottom: 40px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, 350px);

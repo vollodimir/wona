@@ -4,31 +4,16 @@ jQuery(document).ready(function ($) {
     $('.shop__more').toggleClass('shop__more--show');
   });
 
-  ///==================================================
-
-  ///----top-menu
-  // var $window = $(window),
-  //   $target = $('.header__container'),
-  //   $topPosition = $target.offset().top;
-  // $window.on('scroll', function () {
-  //   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //   if (scrollTop > $topPosition && $(document).width() < 1023) {
-  //     $target.addClass('header__fixed');
-  //     return;
-  //   } else {
-  //     $target.removeClass('header__fixed');
-  //   }
-  //   return;
-  // });
+  $('.header__input').on('click', function () {
+    $('body').toggleClass('menu-open');
+  });
 
   ////----sub menu-show
 
-  // $('.menu-item-has-children__btn').on('click', function () {
-  //   if ($(document).width() < 1023) {
-  //     $(this).siblings('.sub-menu').slideToggle('fast');
-  //   } else {
-  //   }
-  // });
+  $('.menu-item-has-children__btn').on('click', function () {
+    $(this).siblings('.sub-menu').slideToggle('slow');
+    $(this).toggleClass('menu-item-has-children__btn--open');
+  });
 
   //---sliders
   $('.slider__list').slick({
