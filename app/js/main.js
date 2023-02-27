@@ -6,6 +6,7 @@ jQuery(document).ready(function ($) {
 
   $('.header__input').on('click', function () {
     $('body').toggleClass('menu-open');
+    $('.header__blur').slideToggle('fast');
   });
 
   ////----sub menu-show

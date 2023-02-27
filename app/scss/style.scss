@@ -1,16 +1,15 @@
 ﻿@import 'normalize';
+@import 'fonts';
 @import 'components/all';
 @import 'media-queries';
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500;600&display=swap');
-
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  color: #425466;
+  font-family: $font-rounded;
+  font-size: 16px;
+  color: #fff;
   background-color: #f5f5f5;
-  font-weight: 300;
-  line-height: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 html {
@@ -47,4 +46,8 @@ input:focus {
   max-width: 1440px;
   overflow: hidden;
   background: #fff;
+}
+
+.menu-open {
+  overflow: hidden;
 }

@@ -1,0 +1,27 @@
+$font-futura: 'Futura Book';
+$font-rounded: 'Rounded Mplus 1c';
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../fonts/FuturaBook/FuturaBook.woff2'), url('../fonts/FuturaBook/FuturaBook.woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  src: url('../fonts/RoundedMplus1c/RoundedMplus1c-Medium.woff2'),
+    url('../fonts/RoundedMplus1c/RoundedMplus1c-Medium.woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  src: url('../fonts/RoundedMplus1c/RoundedMplus1c-Regular.woff2'),
+    url('../fonts/RoundedMplus1c/RoundedMplus1c-Regular.woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
