@@ -2,9 +2,9 @@
 
 A page with products for an online store. Use - HTML/CSS, SCSS, jQuery, WordPress, Woocommerce, ACF.
 
-HTML version hosted <a href="http://pl.vn.ua/wona">pl.vn.ua/wona</a>
-WordPress version - <a href="http://wona.pl.vn.ua/">wona.pl.vn.ua</a>.
-Product page - <a href="http://wona.pl.vn.ua/product-category/misc/">Product page</a>.
+HTML version hosted <a href="http://pl.vn.ua/wona">pl.vn.ua/wona</a><br />
+WordPress version - <a href="http://wona.pl.vn.ua/">wona.pl.vn.ua</a>.<br />
+Product page - <a href="http://wona.pl.vn.ua/product-category/misc/">Product page</a>.<br />
 
 ## Notice!
 
