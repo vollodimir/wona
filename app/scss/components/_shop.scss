@@ -1,4 +1,5 @@
 .shop {
+  color: #000;
   padding-bottom: 40px;
 
   &__container {
@@ -12,6 +13,7 @@
   }
 
   &__title {
+    margin: 0;
     font-weight: 500;
     font-size: 28px;
     line-height: 42px;
@@ -27,6 +29,9 @@
     text-align: right;
     color: #000;
     transition: 1s;
+    p {
+      margin: 0;
+    }
 
     &--show {
       max-height: 20em;
@@ -46,7 +51,7 @@
     color: #000;
 
     &::after {
-      content: url('../../img/icon/arrow-down.svg');
+      content: url('../img/icon/arrow-down.svg');
       width: 14px;
       height: 14px;
       position: absolute;
@@ -70,8 +75,11 @@
   }
 }
 .product {
+  padding: 18px;
   width: 350px;
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   &:hover {
@@ -79,9 +87,11 @@
   }
 
   &__img {
+    align-self: center;
     width: 350px;
     height: 277px;
     overflow: hidden;
+    text-align: center;
 
     img {
       width: 100%;
@@ -91,6 +101,7 @@
   }
 
   &__title {
+    flex-grow: 1;
     font-family: $font-futura;
     font-size: 16px;
     line-height: 30px;
@@ -100,7 +111,6 @@
   }
 
   &__row {
-    padding: 0 18px;
     margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
@@ -123,7 +133,7 @@
   }
 
   &__btn {
-    margin-bottom: 18px;
+    margin: 0 auto;
     display: inline-block;
     min-height: 46px;
     min-width: 250px;

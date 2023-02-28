@@ -1,12 +1,13 @@
 ﻿@import 'normalize';
 @import 'fonts';
+@import 'wp';
 @import 'components/all';
 @import 'media-queries';
 
 body {
   font-family: $font-rounded;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   background-color: #f5f5f5;
   font-weight: 500;
   line-height: 30px;

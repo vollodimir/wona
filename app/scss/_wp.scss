@@ -1,0 +1,50 @@
+﻿//// WP Classes
+
+.content {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #000;
+  }
+  a {
+    color: rgba(#000, 0.6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.post {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  h3,
+  h4,
+  p {
+    margin: 0;
+    line-height: normal;
+  }
+
+  &--center {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+////
+.woocommerce div.product {
+  width: auto;
+}
+.woocommerce div.type-product {
+  display: block;
+  padding: 35px;
+}
